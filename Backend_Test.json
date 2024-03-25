@@ -1,0 +1,118 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Backend_Test",
+    "dateExported": "2024-03-25T10:28:33.777Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "470a6148-8e27-438e-b9e6-4edf3e13cdb3",
+            "colId": "208ff0b7-a716-40c8-8f5f-e18e7e644737",
+            "containerId": "",
+            "name": "getOrders",
+            "url": "http://127.0.0.1:8000/api/orders",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-01T07:46:25.604Z",
+            "modified": "2024-03-01T08:23:35.008Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bc6cccb8-1c64-44ab-8617-7053855f6216",
+            "colId": "208ff0b7-a716-40c8-8f5f-e18e7e644737",
+            "containerId": "",
+            "name": "showOrder",
+            "url": "http://127.0.0.1:8000/api/getorder/1",
+            "method": "GET",
+            "sortNum": 12500,
+            "created": "2024-03-01T08:24:16.008Z",
+            "modified": "2024-03-25T10:15:45.934Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "a917a9e5-05bd-447d-a696-48d4ca01208f",
+            "colId": "208ff0b7-a716-40c8-8f5f-e18e7e644737",
+            "containerId": "",
+            "name": "storeOrders",
+            "url": "http://127.0.0.1:8000/api/makeorders/1",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-03-01T08:23:05.743Z",
+            "modified": "2024-03-25T10:20:00.704Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \r\n \"name\": \"Rántott sajt\", \r\n \"price\": 2490, \r\n \"quantity\": 120, \r\n \"category_id\": 3,\r\n \"image\":\"asdasdas\"\r\n } ",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "fd1e120f-3513-4bc8-bd10-c0153a4e656f",
+            "colId": "208ff0b7-a716-40c8-8f5f-e18e7e644737",
+            "containerId": "",
+            "name": "updateOrdes",
+            "url": "http://127.0.0.1:8000/api/modorders/10",
+            "method": "PATCH",
+            "sortNum": 17500,
+            "created": "2024-03-01T08:23:51.065Z",
+            "modified": "2024-03-25T10:27:43.061Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"name\": \"Rántott sajt\", \n \"price\": 2490, \n \"quantity\": 120, \n \"category_id\": 5,\n \"image\":\"asdasdas\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "bfcf4ddf-d25e-4e97-aab5-9ecac1a2357f",
+            "colId": "208ff0b7-a716-40c8-8f5f-e18e7e644737",
+            "containerId": "",
+            "name": "deleteOrder",
+            "url": "http://127.0.0.1:8000/api/delorders/21",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-03-01T08:18:48.298Z",
+            "modified": "2024-03-25T10:17:53.571Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        }
+    ]
+}
